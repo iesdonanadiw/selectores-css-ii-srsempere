@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo romper herencias</title>
+    <style>
+        /*
+        Propiedades que se heredan:
+        */
+        body {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+        .heredar {
+            color: inherit;
+            font-family: inherit;
+            font-style: inherit;
+        }
+
+        /*
+        Propiedades que no se heredan:
+        */
+        p {
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+
+        .no-heredar {
+            color: initial;
+            font-family: initial;
+            font-style: initial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae aliquid esse laboriosam maiores sit in sint minus, eum fugiat hic provident, asperiores magni, dolore et? Ut odit minima deserunt.</p>
+
+    <p class="heredar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae aliquid esse laboriosam maiores sit in sint minus, eum fugiat hic provident, asperiores magni, dolore et? Ut odit minima deserunt.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae aliquid esse laboriosam maiores sit in sint minus, eum fugiat hic provident, asperiores magni, dolore et? Ut odit minima deserunt.</p>
+
+    <p class="no-heredar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae aliquid esse laboriosam maiores sit in sint minus, eum fugiat hic provident, asperiores magni, dolore et? Ut odit minima deserunt.</p>
+</body>
+</html>
